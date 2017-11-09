@@ -1,0 +1,43 @@
+{
+  "extends": "stylelint-config-standard",
+  "rules": {
+    "block-no-empty": true,
+    "color-no-invalid-hex": true,
+    "comment-empty-line-before": [ "always", {
+      "ignore": ["stylelint-command", "after-comment"]
+    } ],
+    "declaration-colon-space-after": "always",
+    "indentation": [2, {
+      "except": ["value"]
+    }],
+    "max-empty-lines": 2,
+    "rule-empty-line-before": [ "always", {
+      "except": ["first-nested"],
+      "ignore": ["after-comment"]
+    } ],
+    "unit-whitelist": ["em", "rem", "%", "s", "px", "vh", "deg"],
+    "color-hex-case": "lower",
+    "color-hex-length": "long",
+    "color-named": "never",
+    "font-weight-notation": "numeric",
+    "function-calc-no-unspaced-operator": true,
+    "function-comma-newline-after": "never-multi-line",
+    "function-name-case": "lower",
+    "function-url-quotes": "always",
+    "number-leading-zero": "always",
+    "number-max-precision": 2,
+    "number-no-trailing-zeros": true,
+    "string-quotes": "single",
+    "length-zero-no-unit": true,
+    "unit-case": "lower",
+    "value-keyword-case": "lower",
+    "value-no-vendor-prefix": true,
+    "shorthand-property-no-redundant-values": true,
+    "property-no-unknown": true,
+    "property-case": "lower",
+    "declaration-no-important": true,
+    "max-nesting-depth": [3, {
+      "ignoreAtRules": ["/^my-/", "media"]
+    }]
+  }
+}

@@ -1,0 +1,60 @@
+:root {
+  --color-and: #FF323C;
+}
+
+body {
+  background-color: var(--color-and);
+  font-family: 'Poppins', Arial, sans-serif;
+  font-size: 1rem;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: 3.5rem 1fr;
+  height:100vh;
+}
+
+.navbar {
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+  padding: 1rem 1rem 0;
+}
+
+.navbar__title {
+  color: #FFF;
+  flex-grow: 1;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.navbar__clock {
+  color: #FFF;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.dash-grid {
+  display: grid;
+  grid-auto-flow: dense;
+  grid-auto-rows: 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(350px,1fr));
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.dash-grid > .item {
+  background-color: #FFF;
+  border-radius: 1rem;
+  box-shadow: 2px 2px 1px #333;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.dash-grid > .item.item--lg {
+  grid-row: span 2;
+}
+
+.item__title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
