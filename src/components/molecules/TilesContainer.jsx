@@ -7,7 +7,7 @@ class TilesContainer extends React.Component {
 
   render() {
     return (
-      <div>ItemsContainer</div>
+      <div>TilesContainer</div>
     );
   }
 }
